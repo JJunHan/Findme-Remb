@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+#movingfindmediv
+{
+position: relative;
+width: 65%;
+margin: auto;
+}
+
+button[type=button] {
+padding:5px 20px; 
+background:limegreen; 
+border:0 none;
+cursor:pointer;
+-webkit-border-radius: 5px;
+border-radius: 7px; 
+left:139px;
+position:relative;
+z-index:2;
+
+}
+input[type=text] 
+{
+width: 150px;
+padding: 6px 15px 7px;
+margin: 8px 0;
+border: 1px solid #585858;
+box-sizing: border-box;
+position: relative;	
+
+}
+input[type=submit] {
+    padding:5px 20px; 
+    background:#3399ff; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+top:-35px;
+position:relative;
+}
+#styling3
+{
+padding-left:155px;
+padding-bottom:30px;
+
+}
+#styling4
+{
+padding-right:50px;
+}
+</style>
+<head>
+  <title>Project</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css?v=2" />
+</head>
+
+<body>
+
+<div id="main">
+<div id="header"> 
+<div id="logo">
+<div id="logo_text">
+
+<h1><a href="mainpage.html">Games<span class="logo_colour">:)</span></a></h1>
+
+<h2><font size='5'>HTML/PHP based web games</font> <br>
+</div>
+</div>
+
+<div id="menubar">
+<ul id="menu">
+	<li class="selected"><a href="findme.html">Find Me</a> </li>
+	<li><a href="remb.html">Remb</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="content_header">&nbsp;</div>
+<script type="text/javascript">
+function popup()
+{
+var searchaudio = document.getElementById("searchforaudio");
+ if(searchaudio.style.display =='none')	
+	{searchaudio.style.display= 'block';}
+
+	else 
+	{searchaudio.style.display='none';}
+}
+</script>
+<div id="site_content">
+<div id="content">
+<center><button type="button" onclick="popup();" ><strong>Click here to Search for result's analysis</strong></button></center>
+<div id="searchforaudio" style="border:4px solid black; width:457px; height:110px;  border-radius: 20px; position:relative; left:220px; top:5px; display:none;">
+<h2><font color="blue"><b>&nbsp;&nbsp;&nbsp;&nbsp;Enter your User ID for your result's analysis</b></h2></font>
+<div id="styling4">
+<form action="findmereview.php" id="form111" method="POST" name="form">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Namereview" id="texty" style="left:90px;"/>
+</div>
+<div id="styling3">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="Search!" id="searchy" style="left:90px; background:#00C6F0;" />
+</div>
+</form>
+</div>
+</div>
+</div>
+<div id="movingfindmediv">
+	<object id="movingfindme" type="text/html" data="Findme/login.php"   style="border:4px solid #585858; min-width:100%; min-height:740px;
+  overflow:hidden;
+">
+    
+	</object>
+</div>
+
+&nbsp;
+</div>
+
+<div id="footer">
+<p><a <a href="mainpage.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="aboutus.html">Contact Us</a> <br>
+<center>fun stuff</center>
+</div>
+</body>
+</html>

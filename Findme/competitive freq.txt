@@ -1,0 +1,11 @@
+
+	<div id="move7">
+	<a href="ccasualpre.php"><img src="compete.png" width="158px" height="68px" id="casual"></a>
+	</div>
+	
+	<div id="movei7">
+	<img src="i.png" id="i7" onclick="popout7();">
+    </div>
+	<div id="movebubble7">
+    <p id="speech7"><strong>Every wrong click -1 point!<br>Every correct click +10 points!<br>Time limit of only 120seconds!</p></strong>
+    </div>
